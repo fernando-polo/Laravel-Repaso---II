@@ -28,7 +28,7 @@
                 <br>
                 <br>
                 <br>
-                <img src="{{asset('images/Surcoreana.jpg')}}" alt="La escritora surcoreana Han Kang recibe el premio Nobel de Literatura.">
+                <img src="{{asset('images/Surcoreana.jpg')}}"class="img-fluid" alt="La escritora surcoreana Han Kang recibe el premio Nobel de Literatura.">
             </div>
         </div>
     </div>

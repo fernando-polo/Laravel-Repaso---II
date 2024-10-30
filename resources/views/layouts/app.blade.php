@@ -29,10 +29,10 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link {{request()->routeIs('rutaInicio')?'text-primary':''}}" href="{{route('rutaInicio')}}" aria-current="page">Principal</a>
+                    <a class="nav-link {{request()->routeIs('rutaInicio')?'text-primary':''}}" href="{{route('rutaInicio')}}" aria-current="page">{{__('Principal')}}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link {{request()->routeIs('rutaRegistroLibros')?'text-primary':''}}" href="{{route('rutaRegistroLibros')}}" >Registro de libro</a>
+                    <a class="nav-link {{request()->routeIs('rutaRegistroLibros')?'text-primary':''}}" href="{{route('rutaRegistroLibros')}}" >{{__('Registro de libro')}}</a>
                   </li>
                 </ul>
               </div>
@@ -45,7 +45,7 @@
     <footer>
         <div class="container  mt-5">
             <div class="row">
-                Biblioteca Gómez - @copyright reserved 2024 - 29 de Octube de 2024
+              {{__('Biblioteca Gómez - @copyright reserved 2024 - 29 de Octube de 2024')}}
             </div>
         </div>
     </footer>

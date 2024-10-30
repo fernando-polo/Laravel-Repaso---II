@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\validadorRegistroLibros;
 use Illuminate\Http\Request;
 
 class controladorVistas extends Controller
@@ -13,4 +14,13 @@ class controladorVistas extends Controller
     public function Registro_Libro(){
         return view('Registro_Libro');
     }
+
+    public function RegistrarLibro(validadorRegistroLibros $peticionValidada){
+
+        $libro = $peticionValidada->input('txtTitulo');
+        session()->flash('exito', $libro);
+        return to_route('rutaRegistroLibros');
+        
+    }
+
 }

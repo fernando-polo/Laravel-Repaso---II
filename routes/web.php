@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [controladorVistas::class, 'inicio'])->name('rutaInicio');
 Route::get('/RegistroLibros', [controladorVistas::class, 'Registro_Libro'])->name('rutaRegistroLibros');
-Route::post('/RegistrarLibro', [controladorVistas::class, 'Registro_Libro'])->name('rutaRegistrarLibro');
+Route::post('/RegistrarLibro', [controladorVistas::class, 'RegistrarLibro'])->name('rutaRegistrarLibro');
 
 
 

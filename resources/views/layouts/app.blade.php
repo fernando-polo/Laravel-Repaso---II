@@ -11,6 +11,10 @@
     {{-- Llamar a bootstrap --}}
     @vite('resources/js/app.js')
 
+    {{-- SweetAlert --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
     {{-- Título del documento --}}
     <title>@yield('titulo')</title>
 </head>

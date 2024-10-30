@@ -1,0 +1,25 @@
+header{
+    background-color: #6285C4;
+}
+
+footer{
+    background-color: #6285C4;
+    font-weight: bold;
+}
+
+span{
+    font-weight: bold;
+}
+
+li{
+    font-weight: bold;
+}
+
+.container .card .card-header{
+    color: #6285C4;
+}
+
+.btn.btn-sm{
+    background-color: #6285C4;
+    color: white;
+}

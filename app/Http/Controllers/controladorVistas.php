@@ -18,7 +18,7 @@ class controladorVistas extends Controller
     public function RegistrarLibro(validadorRegistroLibros $peticionValidada){
 
         $libro = $peticionValidada->input('txtTitulo');
-        session()->flash('exito', $libro);
+        session()->flash('libroguardado', $libro);
         return to_route('rutaRegistroLibros');
         
     }

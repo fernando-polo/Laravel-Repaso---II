@@ -5,15 +5,14 @@
 
 @section('contenido')
 
-@session ('exito')
+@session ('libroguardado')
 <script>
     Swal.fire({
-      text: "Todo correcto: Libro '{{$value}}' guardado",
+      text: "Todo correcto: Libro '{{$value}}' guardado.",
       icon: "success"
   });
 </script>
 @endsession
-
 
 {{-- Formulario --}}
   <div class="container mt-5 col-md-6">
